@@ -12,4 +12,8 @@ class AgendaViewSet(viewsets.ModelViewSet):
     queryset = Agenda.objects.all()
     serializer_class = AgendaSerializer
 
+class ConviteViewSet(viewsets.ModelViewSet):
+    queryset = Convite.objects.all()
+    serializer_class = ConviteSerializer
+
 # Create your views here.

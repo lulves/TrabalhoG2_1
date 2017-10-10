@@ -19,10 +19,10 @@ from rest_framework import routers, serializers, viewsets
 from agendas.views import *
 
 
-
 router = routers.DefaultRouter()
 router.register(r'users', UserViewSet)
 router.register(r'agenda', AgendaViewSet)
+router.register(r'convite', ConviteViewSet)
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
